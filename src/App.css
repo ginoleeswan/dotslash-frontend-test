@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+/* --------------------
+ Fonts 
+ -------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+
+body {
+  padding-top: 92px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* --------------------
+Header
+ -------------------- */
+
+.header-nav {
+  /* width: 1299px; */
+  height: 92px;
+  /* left: calc(50% - 1299px / 2 - 0.5px); */
+  /* top: 0px; */
+
+  font-size: 16px;
+  font-family: "Suez One", sans-serif;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* --------------------
+Sub Header
+ -------------------- */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-header {
+  /* position: absolute; */
+  /* width: 1300px; */
+  height: 77px;
+  /* left: calc(50% - 1300px / 2);
+  top: 92px; */
+  font-size: 17px;
+  font-family: "Suez One", sans-serif;
+  color: #828282;
+  text-transform: uppercase;
+  background: #eaeaea;
 }
