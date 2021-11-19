@@ -1,11 +1,20 @@
+// change the theme
+$theme-colors: (
+  "primary": #00a2ff,
+  "danger": #ff4136,
+);
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+
 /* --------------------
  Fonts 
  -------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 
 /* --------------------
- Variables 
- -------------------- */
+  Variables 
+  -------------------- */
 :root {
   --blue: #00a2ff;
   --black: #111111;
@@ -13,6 +22,10 @@
   --white: #ffffff;
   --light-grey: rgba(130, 130, 130, 0.5);
 }
+
+/* --------------------
+ Global Settings 
+ -------------------- */
 
 body {
   padding-top: 92px;
@@ -24,9 +37,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: var(--blue);
+}
+
 /* --------------------
-Header
- -------------------- */
+ Header
+  -------------------- */
 
 .header-nav {
   /* width: 1299px; */
@@ -38,17 +55,33 @@ Header
   font-family: "Suez One", sans-serif;
   text-transform: uppercase;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: var(--black);
+}
+
+.nav-link {
+  color: var(--blue);
+}
+
+.grey-link {
+  color: var(--grey);
+  font-size: 17px;
+  text-decoration: none;
+  //   margin-right: 10px;
+}
 
 /* --------------------
-Sub Header
- -------------------- */
+ Sub Header
+  -------------------- */
 
 .sub-header {
   /* position: absolute; */
   /* width: 1300px; */
+  margin-bottom: 30px;
   height: 77px;
   /* left: calc(50% - 1300px / 2);
-  top: 92px; */
+   top: 92px; */
+
   font-size: 17px;
   font-family: "Suez One", sans-serif;
   color: #828282;
@@ -57,11 +90,28 @@ Sub Header
 }
 
 /* -------------------- 
- Buttons 
- -------------------- */
+  Buttons 
+  -------------------- */
+
+.btn {
+  text-transform: uppercase;
+}
 
 .btn-outline {
-  color: var(--blue);
-  outline-color: var(--blue);
-  font-size: x-large;
+  border: 2px solid;
+  border-radius: 4px;
+  //   width: 115px;
+  //   height: 42px;
+}
+
+.tester1 {
+  background-color: "red";
+  width: 100%;
+  height: 200px;
+}
+
+.tester2 {
+  background-color: "green";
+  width: 100%;
+  height: 200px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 const SubHeader = () => {
   return (
@@ -9,10 +9,14 @@ const SubHeader = () => {
           <div class="text-center">Adventure is just around the corner!</div>
         </Col>
         <Col sm={2}>
-          <div class="text-center">Find a Store</div>
+          <Button className="btn-outline" variant="outline-primary">
+            Find a Store
+          </Button>
         </Col>
         <Col sm={2}>
-          <div class="text-center">Not in South Africa?</div>
+          <a href="/#" className="grey-link text-center">
+            Not in South Africa?
+          </a>
         </Col>
       </Row>
     </Container>

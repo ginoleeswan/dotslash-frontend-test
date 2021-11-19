@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import rewayLogo from "../../images/Logo.svg";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   const [active, setActive] = useState("shoes");
@@ -32,9 +33,20 @@ const Header = () => {
             <Nav.Link href="#gift">Gift</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <div>
+          <p>hello</p>
+          <FontAwesomeIcon icon="fa-regular fa-gift" />
+        </div>
+
         <Navbar.Collapse className="justify-content-end">
           <Nav.Link href="#signup">Sign Up</Nav.Link>
-          <Nav.Link href="#login">Login</Nav.Link>
+          <Button
+            href="#login"
+            className="btn-outline"
+            variant="outline-primary"
+          >
+            Login
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
