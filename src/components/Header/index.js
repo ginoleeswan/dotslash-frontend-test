@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import rewayLogo from "../../images/Logo.svg";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Navbar, Container, Nav, Button, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGift,
+  faStar,
+  faHeart,
+  faTag,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [active, setActive] = useState("shoes");
@@ -15,7 +21,7 @@ const Header = () => {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand className="navLogo" href="#home">
           <img
             src={rewayLogo}
             width="163.69"
@@ -33,10 +39,21 @@ const Header = () => {
             <Nav.Link href="#gift">Gift</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <div>
-          <p>hello</p>
-          <FontAwesomeIcon icon="fa-regular fa-gift" />
-        </div>
+
+        <Navbar.Collapse className="justify-content-end">
+          <Nav.Link href="#gift">
+            <FontAwesomeIcon className="navIcon" icon={faGift} />
+          </Nav.Link>
+          <Nav.Link href="#favourite">
+            <FontAwesomeIcon className="navIcon" icon={faStar} />
+          </Nav.Link>
+          <Nav.Link href="#heart">
+            <FontAwesomeIcon className="navIcon" icon={faHeart} />
+          </Nav.Link>
+          <Nav.Link href="#tag">
+            <FontAwesomeIcon className="navIcon" icon={faTag} />
+          </Nav.Link>
+        </Navbar.Collapse>
 
         <Navbar.Collapse className="justify-content-end">
           <Nav.Link href="#signup">Sign Up</Nav.Link>
