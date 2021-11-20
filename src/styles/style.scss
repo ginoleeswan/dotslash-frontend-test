@@ -21,6 +21,7 @@ $theme-colors: (
   --black: #111111;
   --grey: #828282;
   --white: #ffffff;
+  --dark-grey: #4a4a4a;
   --light-grey: rgba(130, 130, 130, 0.5);
 }
 
@@ -39,6 +40,7 @@ body {
 
 a {
   color: var(--blue);
+  text-decoration: none;
 }
 
 .pLight {
@@ -62,6 +64,10 @@ h6 {
 }
 .light {
   color: var(--white);
+}
+
+.grey {
+  color: var(--light-grey);
 }
 /* --------------------
  Header
@@ -90,6 +96,14 @@ h6 {
   font-size: 17px;
   text-decoration: none;
   //   margin-right: 10px;
+}
+
+.navLogo {
+  margin-right: 20px;
+}
+
+.navIcon {
+  color: var(--grey);
 }
 
 /* --------------------
@@ -123,6 +137,16 @@ h6 {
     Main Containers
   -------------------- */
 
+.mainContainer {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.mainContentContainer {
+  max-width: 95%;
+}
+
 .sideContainer {
   width: "30%";
   max-width: 400px;
@@ -130,7 +154,7 @@ h6 {
 
 .infoContainer {
   width: "70%";
-  max-width: 900px;
+  max-width: 1000px;
   overflow-x: hidden;
 }
 
@@ -290,4 +314,36 @@ h6 {
   font-size: 14px;
   font-weight: 700;
   color: var(--light-grey);
+}
+
+/* --------------------
+ Footer
+  -------------------- */
+
+.footer-nav {
+  height: 229px;
+  max-width: 100%;
+  background-color: var(--dark-grey);
+  padding: 40px 120px;
+  margin: 0 auto;
+}
+
+.footerHeader {
+  color: var(--white);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.footerLinks {
+  color: var(--white);
+  font-weight: 700;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.footerIcon {
+  color: var(--white);
+  margin-right: 40px;
+  height: 34;
+  width: 40;
 }
