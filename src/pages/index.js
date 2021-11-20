@@ -1,7 +1,8 @@
 import React from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Button, Container, Row, Col, Breadcrumb } from "react-bootstrap";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
+import SearchBox from "../components/SearchBox";
 import SubHeader from "../components/SubHeader";
 import TopBanner from "../components/TopBanner";
 
@@ -13,15 +14,20 @@ const Home = () => {
         <SubHeader />
       </Row>
       <Row>
-        <Col sm>
-          <div className="tester1 bg-success">
-            <p>hello</p>
-          </div>
+        <Col className="sideContainer" sm>
+          <SearchBox />
         </Col>
-        <Col lg>
-          <div className="tester1 bg-success">
+        <Col className="infoContainer" lg>
+          <Row>
             <TopBanner />
-          </div>
+            <Breadcrumb>
+              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                Boots
+              </Breadcrumb.Item>
+              <Breadcrumb.Item active>Dylan Hiker Boots</Breadcrumb.Item>
+            </Breadcrumb>
+          </Row>
         </Col>
       </Row>
       {/* <Container>

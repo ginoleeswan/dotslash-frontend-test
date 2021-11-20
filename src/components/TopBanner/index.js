@@ -3,7 +3,7 @@ import topBanner from "../../images/TopBanner.png";
 
 const TopBanner = () => {
   return (
-    <div>
+    <div className="topBannerContainer">
       <img src={topBanner} alt="top banner" />
     </div>
   );

@@ -11,6 +11,7 @@ $theme-colors: (
  Fonts 
  -------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Suez+One&display=swap");
 
 /* --------------------
   Variables 
@@ -30,9 +31,8 @@ $theme-colors: (
 body {
   padding-top: 92px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "PT Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +41,12 @@ a {
   color: var(--blue);
 }
 
+h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light-grey);
+  margin: 0;
+}
 /* --------------------
  Header
   -------------------- */
@@ -89,17 +95,29 @@ a {
   background: #eaeaea;
 }
 
+/* --------------------
+    Top Banner
+  -------------------- */
+
+.topBannerContainer {
+  margin-bottom: 20px;
+}
+
 /* -------------------- 
   Buttons 
   -------------------- */
 
 .btn {
   text-transform: uppercase;
+  font-family: "Suez One";
+
+  color: var(--white);
 }
 
 .btn-outline {
   border: 2px solid;
   border-radius: 4px;
+  color: var(--blue);
   //   width: 115px;
   //   height: 42px;
 }
@@ -107,11 +125,65 @@ a {
 .tester1 {
   background-color: "red";
   width: 100%;
-  height: 200px;
+  height: 89px;
 }
 
 .tester2 {
   background-color: "green";
   width: 100%;
   height: 200px;
+}
+
+/* --------------------
+ Search Box
+  -------------------- */
+.searchBoxContainer {
+  width: 366px;
+  max-width: 366px;
+  height: 433px;
+  margin: 0;
+  border: 3px solid var(--blue);
+  padding: 0;
+}
+
+.searchBoxHeader {
+  height: 72px;
+  width: 366px;
+  background-color: var(--blue);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.searchBoxFormContainer {
+  padding: 0 20px;
+}
+
+.searchBoxRow {
+  height: 60px;
+}
+
+.searchBoxPriceRange {
+  height: 60px;
+  width: 313px;
+}
+
+.searchBoxButton {
+  width: 174px;
+  height: 58px;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.searchBoxIcon {
+  margin-right: 11px;
+}
+
+.sideContainer {
+  width: "30%";
+  max-width: 400px;
+}
+
+.infoContainer {
+  width: "70%";
+  max-width: 900px;
+  overflow-x: hidden;
 }
