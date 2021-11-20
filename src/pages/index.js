@@ -1,7 +1,9 @@
 import React from "react";
 import { Button, Container, Row, Col, Breadcrumb } from "react-bootstrap";
+import Advert from "../components/Advert";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
+import MailingList from "../components/MailingList";
 import SearchBox from "../components/SearchBox";
 import SubHeader from "../components/SubHeader";
 import TopBanner from "../components/TopBanner";
@@ -13,10 +15,20 @@ const Home = () => {
       <Row>
         <SubHeader />
       </Row>
+
       <Row>
         <Col className="sideContainer" sm>
-          <SearchBox />
+          <Row>
+            <SearchBox />
+          </Row>
+          <Row>
+            <Advert />
+          </Row>
+          <Row>
+            <MailingList />
+          </Row>
         </Col>
+
         <Col className="infoContainer" lg>
           <Row>
             <TopBanner />
