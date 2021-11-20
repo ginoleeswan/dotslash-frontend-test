@@ -41,11 +41,27 @@ a {
   color: var(--blue);
 }
 
+.pLight {
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: "Suez One";
+  font-size: 20px;
+  margin: 0;
+}
+
 h6 {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
   color: var(--light-grey);
   margin: 0;
+}
+.light {
+  color: var(--white);
 }
 /* --------------------
  Header
@@ -103,6 +119,21 @@ h6 {
   margin-bottom: 20px;
 }
 
+/* --------------------
+    Main Containers
+  -------------------- */
+
+.sideContainer {
+  width: "30%";
+  max-width: 400px;
+}
+
+.infoContainer {
+  width: "70%";
+  max-width: 900px;
+  overflow-x: hidden;
+}
+
 /* -------------------- 
   Buttons 
   -------------------- */
@@ -142,6 +173,7 @@ h6 {
   max-width: 366px;
   height: 433px;
   margin: 0;
+  margin-bottom: 40px;
   border: 3px solid var(--blue);
   padding: 0;
 }
@@ -153,6 +185,24 @@ h6 {
   margin: 0;
   margin-bottom: 20px;
 }
+
+.searchBoxTitleContainer {
+  //   width: 155px;
+}
+
+.sbHeader1 {
+  height: 40%;
+}
+.sbHeader2 {
+  height: 60%;
+}
+
+.searchBoxTitle {
+  color: var(--white);
+  height: 26px;
+  margin-left: 30px;
+}
+
 .searchBoxFormContainer {
   padding: 0 20px;
 }
@@ -176,14 +226,68 @@ h6 {
 .searchBoxIcon {
   margin-right: 11px;
 }
-
-.sideContainer {
-  width: "30%";
-  max-width: 400px;
+.searchBoxTitleIcon {
+  margin-left: 11px;
+  width: 18px;
+}
+.searchBoxTitleBackIcon {
+  margin-right: 11px;
+  width: 18px;
 }
 
-.infoContainer {
-  width: "70%";
-  max-width: 900px;
-  overflow-x: hidden;
+/* --------------------
+ Advert
+  -------------------- */
+
+.commercialContainer {
+  padding: 0 30px;
+
+  margin-bottom: 20px;
+}
+
+// .advertContainer {
+//   width: 366px;
+//   max-width: 366px;
+//   height: 433px;
+//   margin: 0;
+//   margin-bottom: 40px;
+//   border: 3px solid var(--blue);
+//   padding: 0;
+// }
+
+/* --------------------
+ Mailing List
+  -------------------- */
+
+.mailContainer {
+  width: 356px;
+  height: 259;
+  margin-bottom: 20px;
+  background-color: var(--blue);
+}
+
+.mailIconContainer {
+  height: 34;
+  width: 40;
+}
+
+.mailIcon {
+  color: var(--white);
+  height: 34;
+  width: 40;
+}
+
+.mailButton {
+  width: 174px;
+  background-color: var(--white);
+  color: var(--blue);
+  height: 58px;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+#formHorizontalEmail {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--light-grey);
 }
