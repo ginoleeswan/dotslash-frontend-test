@@ -1,11 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import topBanner from "../../images/TopBanner.png";
 
 const TopBanner = () => {
   return (
-    <div className="topBannerContainer">
+    <Container className="topBannerContainer">
       <img src={topBanner} alt="top banner" />
-    </div>
+    </Container>
   );
 };
 
