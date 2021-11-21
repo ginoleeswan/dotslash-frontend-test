@@ -7,6 +7,9 @@ $theme-colors: (
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
 
+//import react-image-gallery styling
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 /* --------------------
  Fonts 
  -------------------- */
@@ -43,9 +46,22 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--white);
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .pLight {
   color: var(--white);
   margin-bottom: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Suez One";
+  font-size: 30px;
+  margin: 0;
 }
 
 h4 {
@@ -55,13 +71,29 @@ h4 {
   margin: 0;
 }
 
-h6 {
+h5 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   color: var(--light-grey);
   margin: 0;
 }
+
+h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--light-grey);
+  margin: 0;
+}
+
+ul {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.13px;
+  color: var(--grey);
+}
+
 .light {
   color: var(--white);
 }
@@ -69,6 +101,21 @@ h6 {
 .grey {
   color: var(--light-grey);
 }
+
+.form-select {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.form-select::placeholder {
+  color: var(--light-grey);
+}
+
+.form-control::placeholder {
+  color: var(--light-grey);
+}
+
 /* --------------------
  Header
   -------------------- */
@@ -89,6 +136,11 @@ h6 {
 
 .nav-link {
   color: var(--blue);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--blue);
+  text-decoration: none;
 }
 
 .grey-link {
@@ -125,12 +177,29 @@ h6 {
   background: #eaeaea;
 }
 
+.grey-link:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
 /* --------------------
     Top Banner
   -------------------- */
 
 .topBannerContainer {
   margin-bottom: 20px;
+  padding: 0;
+}
+
+.topBannerButton {
+  width: 160px;
+  border: 3px solid var(--white) !important;
+  color: var(--white) !important;
+}
+.topBannerButton:hover {
+  border: 3px solid var(--white) !important;
+
+  color: var(--white) !important;
 }
 
 /* --------------------
@@ -154,8 +223,14 @@ h6 {
 
 .infoContainer {
   width: "70%";
-  max-width: 1000px;
+  max-width: 880px;
   overflow-x: hidden;
+}
+
+.horizontalLineMain {
+  width: 602px;
+  //   height: 0;
+  border: 1px solid var(--light-grey);
 }
 
 /* -------------------- 
@@ -177,6 +252,11 @@ h6 {
   //   height: 42px;
 }
 
+.btn-outline:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .tester1 {
   background-color: "red";
   width: 100%;
@@ -187,6 +267,48 @@ h6 {
   background-color: "green";
   width: 100%;
   height: 200px;
+}
+
+/* --------------------
+Discount Tag
+  -------------------- */
+
+.discountTagContainer {
+  width: 100px;
+  max-width: 100px;
+  height: 25px;
+  background-color: var(--blue);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+.discountTagText {
+  color: var(--white);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.discountTagIcon {
+  margin-right: 5px;
+}
+
+/* --------------------
+Low Stock Tag
+  -------------------- */
+
+.lowStockTagContainer {
+  width: 100px;
+  max-width: 100px;
+  height: 31px;
+  background-color: rgba(0, 0, 0, 0.56);
+
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
 }
 
 /* --------------------
@@ -204,10 +326,11 @@ h6 {
 
 .searchBoxHeader {
   height: 72px;
-  width: 366px;
+  width: 360px;
   background-color: var(--blue);
   margin: 0;
   margin-bottom: 20px;
+  padding: 5px;
 }
 
 .searchBoxTitleContainer {
@@ -228,7 +351,7 @@ h6 {
 }
 
 .searchBoxFormContainer {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .searchBoxRow {
@@ -247,6 +370,12 @@ h6 {
   border-radius: 0;
 }
 
+.searchBoxButton:hover {
+  color: var(--blue);
+  border: 3px solid var(--blue);
+  background-color: var(--white);
+}
+
 .searchBoxIcon {
   margin-right: 11px;
 }
@@ -257,6 +386,31 @@ h6 {
 .searchBoxTitleBackIcon {
   margin-right: 11px;
   width: 18px;
+}
+
+.react-tag-input__tag {
+  background-color: var(--blue) !important;
+}
+
+.react-tag-input__tag__content {
+  color: var(--white);
+}
+
+.react-tag-input__tag__remove {
+  background-color: var(--blue) !important;
+  color: var(--white);
+}
+.react-tag-input__tag__remove::before {
+  background-color: var(--white) !important;
+  color: var(--white);
+}
+.react-tag-input__tag__remove::after {
+  background-color: var(--white) !important;
+  color: var(--white);
+}
+
+.react-tag-input__input {
+  font-size: 0.8em !important;
 }
 
 /* --------------------
@@ -310,10 +464,16 @@ h6 {
   border-radius: 0;
 }
 
+.mailButton:hover {
+  color: var(--white);
+  border: 3px solid var(--white);
+  background-color: var(--blue);
+}
+
 #formHorizontalEmail {
   font-size: 14px;
   font-weight: 700;
-  color: var(--light-grey);
+  color: var(--black);
 }
 
 /* --------------------
@@ -346,4 +506,140 @@ h6 {
   margin-right: 40px;
   height: 34;
   width: 40;
+}
+
+/* --------------------
+Product Carousel
+  -------------------- */
+
+.productCarouselContainer {
+  width: 420px;
+  padding: 0;
+}
+
+.image-gallery {
+  width: 420px;
+}
+.image-gallery-thumbnail-image {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+/* --------------------
+Product Info
+  -------------------- */
+
+.productInfoContainer {
+  width: 355px;
+  height: 385px;
+  margin-bottom: 20px;
+  padding: 22px 22px;
+  border: 6px solid var(--blue);
+}
+
+.productInfoTitle {
+  margin-bottom: 6px;
+}
+
+.productInfoSubTitle {
+  margin-bottom: 17px;
+}
+
+.productInfoStoreIcon {
+  margin-right: 6px;
+}
+
+.productInfoMainSection {
+  padding: 0 20px;
+}
+.productInfoDetailsSection {
+  padding: 0 40px;
+  height: 70px;
+}
+
+.productInfoMainHeaderText {
+  text-transform: capitalize;
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 16px;
+}
+.productInfoMainHeaderTextInfo {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.productInfoOriginalPrice {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: end;
+  text-decoration: line-through;
+}
+.productInfoFinalPrice {
+  text-align: end;
+}
+
+.horizontalLine {
+  width: 285px;
+  height: 0;
+  border: 1px solid var(--light-grey);
+  margin-left: 18px;
+  margin-bottom: 20px;
+}
+
+/* --------------------
+Purchase Form
+  -------------------- */
+
+.purchaseFormContainer {
+  width: 355px;
+  height: 325px;
+  margin-bottom: 20px;
+  padding: 24px 35px;
+  background-color: #eaeaea;
+}
+
+.purchaseFormButton {
+  width: 308px;
+  height: 85px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 20px;
+  border-radius: 0;
+  font-size: 30px;
+}
+
+.purchaseFormButton:hover {
+  color: var(--blue);
+  border: 3px solid var(--blue);
+  background-color: var(--white);
+}
+
+.purchaseFormIcon {
+  margin-right: 20px;
+  width: 18px;
+}
+
+/* --------------------
+ Product Card
+  -------------------- */
+
+.card:hover {
+  outline: 3px solid var(--blue) !important;
+}
+
+.cardViewLink {
+  color: var(--grey);
+  font-weight: 700;
+}
+.cardViewLink:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.productCardArrowIcon {
+  margin-left: 10px;
 }
