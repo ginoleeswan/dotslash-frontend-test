@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Container, Row, Col, Breadcrumb } from "react-bootstrap";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
 import MailingList from "../components/MailingList";
+import ProductCard from "../components/ProductCard";
 import ProductCarousel from "../components/ProductCarousel";
 import ProductInfo from "../components/ProductInfo";
 import ProductPurchaseForm from "../components/ProductPurchaseForm";
 import SearchBox from "../components/SearchBox";
 import SubHeader from "../components/SubHeader";
 import TopBanner from "../components/TopBanner";
+import { ShoesContext } from "../context/ShoesProvider";
 
 const Home = () => {
+  const [boots] = useContext(ShoesContext);
+
+  const bootsList = boots
+    .filter((item) => item.title != "Dylan Hiker Boot")
+    .map((boot) => (
+      <ProductCard
+        name={boot.title}
+        brand={boot.brand}
+        price={boot.price}
+        image={boot.image}
+        sale={boot.sale}
+        discount={boot.discount}
+        lowStock={boot.lowStock}
+      />
+    ));
+
   return (
     <Container className="mainContainer">
       <Header />
@@ -20,7 +38,7 @@ const Home = () => {
         <SubHeader />
       </Row>
       <Container className="mainContentContainer">
-        <Row>
+        <Row className=" justify-content-center h-100">
           <Col className="sideContainer" sm>
             <Row>
               <SearchBox />
@@ -32,7 +50,6 @@ const Home = () => {
               <MailingList />
             </Row>
           </Col>
-
           <Col className="infoContainer" lg>
             <Row>
               <TopBanner />
@@ -50,15 +67,29 @@ const Home = () => {
               </Col>
               <Col>
                 <Row>
-                  <ProductInfo />
+                  <ProductInfo product={boots[5]} />
                 </Row>
                 <Row>
                   <ProductPurchaseForm />
                 </Row>
               </Col>
             </Row>
-            <Row>more from boots</Row>
-            <Row>boots list</Row>
+            <Row className="align-items-center justify-content-center mb-4">
+              <Col
+                style={{
+                  width: 200,
+                  maxWidth: 200,
+                  padding: 0,
+                  marginRight: 10,
+                }}
+              >
+                <h4>
+                  More from <span style={{ color: "#00a2ff" }}>boots</span>
+                </h4>
+              </Col>
+              <Col className="horizontalLineMain"></Col>
+            </Row>
+            <Row style={{ paddingLeft: 10 }}>{bootsList}</Row>
           </Col>
         </Row>
       </Container>
