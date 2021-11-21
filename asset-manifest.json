@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/DotSlash-Frontend-Test/static/css/main.3bb9850b.chunk.css",
+    "main.js": "/DotSlash-Frontend-Test/static/js/main.f05160cf.chunk.js",
+    "main.js.map": "/DotSlash-Frontend-Test/static/js/main.f05160cf.chunk.js.map",
+    "runtime-main.js": "/DotSlash-Frontend-Test/static/js/runtime-main.243ba389.js",
+    "runtime-main.js.map": "/DotSlash-Frontend-Test/static/js/runtime-main.243ba389.js.map",
+    "static/css/2.ce3df9c6.chunk.css": "/DotSlash-Frontend-Test/static/css/2.ce3df9c6.chunk.css",
+    "static/js/2.bc7062e2.chunk.js": "/DotSlash-Frontend-Test/static/js/2.bc7062e2.chunk.js",
+    "static/js/2.bc7062e2.chunk.js.map": "/DotSlash-Frontend-Test/static/js/2.bc7062e2.chunk.js.map",
+    "index.html": "/DotSlash-Frontend-Test/index.html",
+    "static/css/2.ce3df9c6.chunk.css.map": "/DotSlash-Frontend-Test/static/css/2.ce3df9c6.chunk.css.map",
+    "static/css/main.3bb9850b.chunk.css.map": "/DotSlash-Frontend-Test/static/css/main.3bb9850b.chunk.css.map",
+    "static/js/2.bc7062e2.chunk.js.LICENSE.txt": "/DotSlash-Frontend-Test/static/js/2.bc7062e2.chunk.js.LICENSE.txt",
+    "static/media/Logo.962054aa.svg": "/DotSlash-Frontend-Test/static/media/Logo.962054aa.svg",
+    "static/media/TopBanner.00c0a7cc.png": "/DotSlash-Frontend-Test/static/media/TopBanner.00c0a7cc.png",
+    "static/media/ad.23623333.png": "/DotSlash-Frontend-Test/static/media/ad.23623333.png",
+    "static/media/cameron.b9c8be2f.png": "/DotSlash-Frontend-Test/static/media/cameron.b9c8be2f.png",
+    "static/media/dylan01.473c6ac4.png": "/DotSlash-Frontend-Test/static/media/dylan01.473c6ac4.png",
+    "static/media/dylan02.65fda78a.png": "/DotSlash-Frontend-Test/static/media/dylan02.65fda78a.png",
+    "static/media/dylan03.44f9ad00.png": "/DotSlash-Frontend-Test/static/media/dylan03.44f9ad00.png",
+    "static/media/dylan04.2065ae00.png": "/DotSlash-Frontend-Test/static/media/dylan04.2065ae00.png",
+    "static/media/dylan05.84dbfe1e.png": "/DotSlash-Frontend-Test/static/media/dylan05.84dbfe1e.png",
+    "static/media/grayson.68ab620e.png": "/DotSlash-Frontend-Test/static/media/grayson.68ab620e.png",
+    "static/media/hargrave.18ee640d.png": "/DotSlash-Frontend-Test/static/media/hargrave.18ee640d.png",
+    "static/media/jean.8fdbbc56.png": "/DotSlash-Frontend-Test/static/media/jean.8fdbbc56.png",
+    "static/media/orca.0d15ec4c.png": "/DotSlash-Frontend-Test/static/media/orca.0d15ec4c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.243ba389.js",
+    "static/css/2.ce3df9c6.chunk.css",
+    "static/js/2.bc7062e2.chunk.js",
+    "static/css/main.3bb9850b.chunk.css",
+    "static/js/main.f05160cf.chunk.js"
+  ]
+}
