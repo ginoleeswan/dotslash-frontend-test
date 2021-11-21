@@ -49,7 +49,7 @@ const SearchBox = () => {
       <Form className="searchBoxFormContainer">
         <Form.Group as={Row} className="mb-4" controlId="formHorizontalBrands">
           <Form.Label sm={2}>
-            <h6>brands</h6>
+            <h5>brands</h5>
           </Form.Label>
           <ReactTagInput
             tags={tags}
@@ -60,7 +60,7 @@ const SearchBox = () => {
 
         <Form.Group as={Row} className="mb-4" controlId="formHorizontalColor">
           <Form.Label>
-            <h6>color</h6>
+            <h5>color</h5>
           </Form.Label>
           <Form.Select aria-label="Default select example">
             <option>SELECT COLOR</option>
@@ -74,7 +74,7 @@ const SearchBox = () => {
 
         <Form.Group as={Row} className="mb-5" controlId="formHorizontalPricing">
           <Form.Label>
-            <h6>pricing</h6>
+            <h5>pricing</h5>
           </Form.Label>
           <Range
             className="searchBoxPriceRange"
