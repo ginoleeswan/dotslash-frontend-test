@@ -11,18 +11,6 @@ const SearchBox = () => {
   const [pricing, setPricing] = useState([300, 2000]);
   const [tags, setTags] = useState(["example tag"]);
 
-  // const handle = () => {
-  //   <Tooltip
-  //     prefixCls="rc-slider-tooltip"
-  //     overlay={pricing}
-  //     visible={true}
-  //     placement="top"
-  //     key={0}
-  //   >
-  //     <Handle value={pricing} />
-  //   </Tooltip>;
-  // };
-
   const Slider = require("rc-slider");
   const createSliderWithTooltip = Slider.createSliderWithTooltip;
   const Range = createSliderWithTooltip(Slider.Range);
