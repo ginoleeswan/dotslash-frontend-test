@@ -698,28 +698,59 @@ Purchase Form
     // width: 100%;
     margin-bottom: 20px;
   }
+
+  .topBannerHeader {
+    font-size: 25px;
+  }
+  .topBannerSubHeader {
+    font-size: 16px;
+  }
+  .topBannerButtonContainer {
+    padding-left: 120px;
+  }
 }
 
 @media (max-width: 991px) {
+  .mainContainer {
+    overflow: hidden;
+  }
   .header-nav {
     padding-top: 0;
     align-items: center;
     justify-content: center;
   }
 
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .topBannerButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sub-header {
+    padding: 0 30px;
+  }
+
+  .sub-header .btn-outline {
+    font-size: 14px;
+  }
+
+  .grey-link {
+    font-size: 14px;
+  }
+
   .navbar .container {
+    max-width: 100%;
     background-color: var(--white);
-    padding: 15px;
-    // border: 1px solid var(--light-grey);
+    padding: 15px 30px;
   }
 
   .navbar-collapse {
     border-bottom: 1px solid var(--light-grey);
     padding: 10px 10px;
-  }
-
-  .loginButton {
-    margin-left: 15px;
   }
 
   .sideContainer {
@@ -734,12 +765,67 @@ Purchase Form
   .image-gallery {
     width: 100%;
   }
+
+  .productInfoContainer {
+    width: 100%;
+  }
+
+  .productInfoDiscountContainer {
+    width: 85%;
+  }
+
+  .productInfoFinalPriceContainer {
+    width: 15%;
+  }
+
+  .horizontalLine {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .purchaseFormContainer {
+    width: 100%;
+  }
+
+  .footer-nav {
+    padding: 40px;
+    height: 100%;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .productCardContainer {
     justify-content: center;
     padding-left: 0;
+  }
+
+  .topBannerHeader {
+    font-size: 24px;
+  }
+  .topBannerSubHeader {
+    font-size: 15px;
+  }
+
+  .sub-header {
+    padding: 0 30px;
+  }
+  .subHeaderHeader {
+    font-size: 14px;
+  }
+
+  .sub-header .btn-outline {
+    font-size: 14px;
+  }
+
+  .grey-link {
+    font-size: 14px;
+  }
+  .productInfoDiscountContainer {
+    width: 80%;
+  }
+
+  .productInfoFinalPriceContainer {
+    width: 20%;
   }
 }
 
@@ -759,7 +845,7 @@ Purchase Form
     display: flex;
     justify-content: center;
     padding: 0;
-    padding-left: 40px;
+    padding-left: 30px;
   }
 
   .subHeaderLinkContainer {
@@ -767,7 +853,7 @@ Purchase Form
     display: flex;
     justify-content: center;
     padding: 0;
-    padding-right: 20px;
+    padding-right: 30px;
   }
 
   .sub-header .btn-outline {
@@ -796,6 +882,18 @@ Purchase Form
 
   .image-gallery {
     width: 100%;
+  }
+
+  .productInfoDiscountContainer {
+    width: 70%;
+  }
+
+  .productInfoFinalPriceContainer {
+    width: 30%;
+  }
+
+  .purchaseFormButton {
+    font-size: 25px;
   }
 
   .card {
