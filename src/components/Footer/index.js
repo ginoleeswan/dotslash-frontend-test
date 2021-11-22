@@ -15,13 +15,13 @@ const Footer = () => {
             <Col>
               <h4 className="footerHeader">Account</h4>
               <Row>
-                <a href="#" className="footerLinks">
+                <a href="/#" className="footerLinks">
                   Account Details
                 </a>
-                <a href="#" className="footerLinks">
+                <a href="/#" className="footerLinks">
                   Orders
                 </a>
-                <a href="#" className="footerLinks">
+                <a href="/#" className="footerLinks">
                   Returns and Exchanges
                 </a>
               </Row>
@@ -30,13 +30,13 @@ const Footer = () => {
             <Col>
               <h4 className="footerHeader">The Company</h4>
               <Row>
-                <a href="#" className="footerLinks">
+                <a href="/#" className="footerLinks">
                   About us
                 </a>
-                <a href="#" className="footerLinks">
+                <a href="/#" className="footerLinks">
                   Careers
                 </a>
-                <a href="#" className="footerLinks">
+                <a href="/#" className="footerLinks">
                   Contact
                 </a>
               </Row>
@@ -48,7 +48,7 @@ const Footer = () => {
           <h4 className="footerHeader">Follow Us!</h4>
           <Row>
             <Col>
-              <a href="#" style={{ fontSize: 40 }}>
+              <a href="/#" style={{ fontSize: 40 }}>
                 <FontAwesomeIcon
                   className="footerIcon"
                   icon={faFacebookSquare}
@@ -56,7 +56,7 @@ const Footer = () => {
               </a>
             </Col>
             <Col>
-              <a href="#" style={{ fontSize: 40 }}>
+              <a href="/#" style={{ fontSize: 40 }}>
                 <FontAwesomeIcon className="footerIcon" icon={faInstagram} />
               </a>
             </Col>
