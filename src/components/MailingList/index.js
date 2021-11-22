@@ -28,7 +28,7 @@ const MailingList = () => {
           Sign up to our mailing list!
         </h4>
       </Row>
-      <Form className="searchBoxFormContainer">
+      <Form className="mailBoxFormContainer">
         <Form.Group as={Row} className="mb-4" controlId="formHorizontalEmail">
           <Form.Label sm={2}>
             <h6 className="light">email</h6>
