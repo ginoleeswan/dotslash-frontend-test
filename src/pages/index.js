@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Container, Row, Col, Breadcrumb } from "react-bootstrap";
+import { Container, Row, Col, Breadcrumb } from "react-bootstrap";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,7 +18,7 @@ const Home = () => {
   const [boots] = useContext(ShoesContext);
 
   const bootsList = boots
-    .filter((item) => item.title != "Dylan Hiker Boot")
+    .filter((item) => item.title !== "Dylan Hiker Boot")
     .map((boot) => (
       <ProductCard
         name={boot.title}

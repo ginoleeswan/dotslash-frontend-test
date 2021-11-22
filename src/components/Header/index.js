@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import rewayLogo from "../../images/Logo.svg";
-import { Navbar, Container, Nav, Button, Row, Col } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGift,
@@ -10,16 +10,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  const [active, setActive] = useState("shoes");
+  const [active, setActive] = useState("/shoes");
 
   return (
-    <Navbar
-      bg="white"
-      expand="lg"
-      className="header-nav"
-      onSelect={(selectedKey) => setActive(selectedKey)}
-      fixed="top"
-    >
+    <Navbar bg="white" expand="lg" className="header-nav" fixed="top">
       <Container>
         <Navbar.Brand className="navLogo" href="#home">
           <img
@@ -32,7 +26,11 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav
+            activeKey={active}
+            onSelect={(selectedKey) => setActive(selectedKey)}
+            className="me-auto"
+          >
             <Nav.Link href="#apparels">Apparels</Nav.Link>
             <Nav.Link href="#shoes">Shoes</Nav.Link>
             <Nav.Link href="#equipment">Equipment</Nav.Link>

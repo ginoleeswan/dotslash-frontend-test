@@ -15,7 +15,7 @@ import jean from "../images/boots/jean.png";
 export const ShoesContext = createContext();
 
 export const ShoesProvider = (props) => {
-  const [boots, setBoots] = useState([
+  const [boots] = useState([
     {
       title: "Hargrave Ankle Boot",
       id: "1",

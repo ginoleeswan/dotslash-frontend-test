@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { faSearch, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { Container, Row, Button, Form } from "react-bootstrap";
 import "@pathofdev/react-tag-input/build/index.css";
 import ReactTagInput from "@pathofdev/react-tag-input";
 // import { Range, Tooltip, Handle } from "rc-slider";

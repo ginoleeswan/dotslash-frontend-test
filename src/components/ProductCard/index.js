@@ -15,8 +15,6 @@ const ProductCard = ({
   discount,
   lowStock,
 }) => {
-  const url = "http://localhost:3000";
-
   return (
     <Card
       style={{
