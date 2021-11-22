@@ -83,7 +83,7 @@ const Home = () => {
                   marginRight: 10,
                 }}
               >
-                <h4>
+                <h4 className="moreFromHeader">
                   More from <span style={{ color: "#00a2ff" }}>boots</span>
                 </h4>
               </Col>

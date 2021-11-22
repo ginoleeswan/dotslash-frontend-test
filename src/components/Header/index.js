@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import rewayLogo from "../../images/Logo.svg";
-import {
-  Navbar,
-  Container,
-  Nav,
-  Button,
-  OverlayTrigger,
-  Tooltip,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGift,

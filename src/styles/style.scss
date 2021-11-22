@@ -742,6 +742,13 @@ Purchase Form
   }
 }
 
+@media (max-width: 767px) {
+  .productCardContainer {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 575px) {
   .sub-header {
     margin-bottom: 30px;
@@ -749,8 +756,28 @@ Purchase Form
     padding: 8px 0;
   }
 
+  .subHeaderHeader {
+    font-size: 14px;
+  }
+
+  .subHeaderButtonContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  .subHeaderLinkContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-right: 20px;
+  }
+
   .sub-header .btn-outline {
-    width: 200px;
+    width: 150px;
   }
 
   .topBannerTextContainer {
@@ -767,9 +794,6 @@ Purchase Form
   .topBannerSubHeader {
     font-size: 12px;
   }
-  // .topBannerButton {
-  //   width: 100px;
-  // }
 
   .productCarouselContainer {
     width: 100%;
@@ -780,22 +804,16 @@ Purchase Form
     width: 100%;
   }
 
-  .productInfoFinalPrice {
-  }
-
-  .productCardContainer {
-    justify-content: center;
-    padding-left: 0;
-  }
-
   .card {
-    width: 240px;
-    height: 270px;
     margin-right: 0;
-    margin-bottom: 47px;
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
-    border-radius: 0;
+  }
+
+  .moreFromHeader {
+    font-size: 16px;
+  }
+
+  .footer-nav {
+    padding: 20px;
+    height: 100%;
   }
 }

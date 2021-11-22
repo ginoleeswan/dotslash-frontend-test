@@ -6,16 +6,18 @@ const SubHeader = () => {
     <Container className="sub-header ">
       <Row className="align-items-center justify-content-center h-100">
         <Col sm={7}>
-          <div class="text-center">Adventure is just around the corner!</div>
+          <div class="text-center subHeaderHeader">
+            Adventure is just around the corner!
+          </div>
         </Col>
-        <Col sm={2}>
+        <Col sm={2} className="subHeaderButtonContainer">
           <Row className="align-items-center justify-content-center">
             <Button className="btn-outline" variant="outline-primary">
               Find a Store
             </Button>
           </Row>
         </Col>
-        <Col sm={3}>
+        <Col sm={3} className="subHeaderLinkContainer">
           <Row className="align-items-center justify-content-center">
             <a href="/#" className="grey-link text-center">
               Not in South Africa?
