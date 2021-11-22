@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import rewayLogo from "../../images/Logo.svg";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  Button,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGift,
@@ -31,24 +38,24 @@ const Header = () => {
             onSelect={(selectedKey) => setActive(selectedKey)}
             className="me-auto"
           >
-            <Nav.Link href="#apparels">Apparels</Nav.Link>
-            <Nav.Link href="#shoes">Shoes</Nav.Link>
-            <Nav.Link href="#equipment">Equipment</Nav.Link>
-            <Nav.Link href="#gift">Gift</Nav.Link>
+            <Nav.Link href="#">Apparels</Nav.Link>
+            <Nav.Link href="#">Shoes</Nav.Link>
+            <Nav.Link href="#">Equipment</Nav.Link>
+            <Nav.Link href="#">Gift</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 
         <Navbar.Collapse className="justify-content-end">
-          <Nav.Link href="#gift">
+          <Nav.Link href="#">
             <FontAwesomeIcon className="navIcon" icon={faGift} />
           </Nav.Link>
-          <Nav.Link href="#favourite">
+          <Nav.Link href="#">
             <FontAwesomeIcon className="navIcon" icon={faStar} />
           </Nav.Link>
-          <Nav.Link href="#heart">
+          <Nav.Link href="#">
             <FontAwesomeIcon className="navIcon" icon={faHeart} />
           </Nav.Link>
-          <Nav.Link href="#tag">
+          <Nav.Link href="#">
             <FontAwesomeIcon className="navIcon" icon={faTag} />
           </Nav.Link>
         </Navbar.Collapse>
@@ -57,7 +64,7 @@ const Header = () => {
           <Nav.Link href="#signup">Sign Up</Nav.Link>
           <Button
             href="#login"
-            className="btn-outline"
+            className="btn-outline loginButton"
             variant="outline-primary"
           >
             Login

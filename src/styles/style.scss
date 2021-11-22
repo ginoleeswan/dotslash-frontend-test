@@ -157,6 +157,9 @@ ul {
 .navIcon {
   color: var(--grey);
 }
+.navIcon:hover {
+  color: var(--blue);
+}
 
 /* --------------------
  Sub Header
@@ -202,6 +205,14 @@ ul {
   color: var(--white) !important;
 }
 
+.topBannerButtonContainer {
+  padding-left: 140px;
+}
+
+.topBannerTextContainer {
+  padding-left: 55px;
+}
+
 /* --------------------
     Main Containers
   -------------------- */
@@ -231,6 +242,14 @@ ul {
   width: 602px;
   //   height: 0;
   border: 1px solid var(--light-grey);
+}
+
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.infoPurchaseContainer {
 }
 
 /* -------------------- 
@@ -584,6 +603,15 @@ Product Info
 .productInfoFinalPrice {
   text-align: end;
 }
+.productInfoDiscountContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.productInfoFinalPriceContainer {
+  width: 30%;
+}
 
 .horizontalLine {
   width: 285px;
@@ -630,6 +658,23 @@ Purchase Form
  Product Card
   -------------------- */
 
+.productCardContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.card {
+  width: 240px;
+  height: 270px;
+  margin-right: 41px;
+  margin-bottom: 47px;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  border-radius: 0;
+}
+
 .card:hover {
   outline: 3px solid var(--blue) !important;
 }
@@ -645,4 +690,112 @@ Purchase Form
 
 .productCardArrowIcon {
   margin-left: 10px;
+}
+
+/* -------------------- 
+ Responsive
+ -------------------- */
+
+@media (max-width: 1262px) {
+  .productCarouselContainer {
+    // width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-nav {
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .container {
+    background-color: var(--white);
+    padding: 15px;
+    // border: 1px solid var(--light-grey);
+  }
+
+  .nav-link {
+    // width: 120px;
+  }
+  .navbar-collapse {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 10px 10px;
+  }
+
+  .loginButton {
+    margin-left: 15px;
+  }
+
+  .sideContainer {
+    display: none;
+  }
+
+  .productCarouselContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-gallery {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .sub-header {
+    margin-bottom: 30px;
+    height: 140px;
+    padding: 8px 0;
+  }
+
+  .sub-header .btn-outline {
+    width: 200px;
+  }
+
+  .topBannerTextContainer {
+    padding-left: 30px;
+  }
+  .topBannerButtonContainer {
+    padding-left: 0;
+    padding-right: 25px;
+  }
+
+  .topBannerHeader {
+    font-size: 20px;
+  }
+  .topBannerSubHeader {
+    font-size: 12px;
+  }
+  // .topBannerButton {
+  //   width: 100px;
+  // }
+
+  .productCarouselContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image-gallery {
+    width: 100%;
+  }
+
+  .productInfoFinalPrice {
+  }
+
+  .productCardContainer {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .card {
+    width: 240px;
+    height: 270px;
+    margin-right: 0;
+    margin-bottom: 47px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-radius: 0;
+  }
 }

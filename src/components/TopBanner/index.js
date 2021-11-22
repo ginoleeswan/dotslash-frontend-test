@@ -17,15 +17,15 @@ const TopBanner = () => {
         }}
         className="align-items-center"
       >
-        <Col style={{ paddingLeft: 55 }}>
-          <Row>
-            <h3 style={{ color: "white" }}>SUMMER SALE!</h3>
+        <Col className="topBannerTextContainer">
+          <Row style={{ color: "white" }}>
+            <h3 className="topBannerHeader">SUMMER SALE!</h3>
           </Row>
           <Row style={{ color: "white" }}>
-            <h4>up to 50% off!</h4>
+            <h4 className="topBannerSubHeader">up to 50% off!</h4>
           </Row>
         </Col>
-        <Col style={{ paddingLeft: 140 }}>
+        <Col className="topBannerButtonContainer">
           <Button
             className="topBannerButton btn-outline"
             variant="outline-primary"

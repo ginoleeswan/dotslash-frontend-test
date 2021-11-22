@@ -16,18 +16,7 @@ const ProductCard = ({
   lowStock,
 }) => {
   return (
-    <Card
-      style={{
-        width: 240,
-        height: 270,
-        marginRight: 41,
-        marginBottom: 47,
-        paddingLeft: 0,
-        paddingRight: 0,
-        border: "none",
-        borderRadius: 0,
-      }}
-    >
+    <Card>
       <a href="/#" className="cardViewLink">
         <Card.Img variant="top" alt={name} src={image} />
         <Container style={{ position: "absolute", left: 106, top: 10 }}>

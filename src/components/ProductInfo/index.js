@@ -60,11 +60,14 @@ const ProductInfo = ({ product }) => {
         <h3 className="productInfoOriginalPrice">R{product.price}</h3>
       </Row>
       <Row className="align-items-center justify-content-end">
-        <Col sm={4}></Col>
-        <Col sm={5} className="justify-content-end">
+        {/* <Col sm={4}></Col> */}
+        <Col sm={9} className="productInfoDiscountContainer">
           <DiscountTag amount={product.discount} />
         </Col>
-        <Col sm={3} className="justify-content-end">
+        <Col
+          sm={3}
+          className="justify-content-end productInfoFinalPriceContainer"
+        >
           <h3 className="productInfoFinalPrice">R{product.salePrice}</h3>
         </Col>
       </Row>

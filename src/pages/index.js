@@ -62,10 +62,10 @@ const Home = () => {
               </Breadcrumb>
             </Row>
             <Row>
-              <Col>
+              <Col className="carouselContainer">
                 <ProductCarousel />
               </Col>
-              <Col>
+              <Col className="infoPurchaseContainer">
                 <Row>
                   <ProductInfo product={boots[5]} />
                 </Row>
@@ -89,7 +89,7 @@ const Home = () => {
               </Col>
               <Col className="horizontalLineMain"></Col>
             </Row>
-            <Row style={{ paddingLeft: 10 }}>{bootsList}</Row>
+            <Row className="productCardContainer">{bootsList}</Row>
           </Col>
         </Row>
       </Container>
