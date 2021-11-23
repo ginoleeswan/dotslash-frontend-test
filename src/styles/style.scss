@@ -591,6 +591,8 @@ Product Info
   font-size: 16px;
 }
 .productInfoMainHeaderTextInfo {
+  display: flex;
+  align-items: center;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 16px;
@@ -623,6 +625,16 @@ Product Info
   border: 1px solid var(--light-grey);
   margin-left: 18px;
   margin-bottom: 20px;
+}
+
+.colorCircle {
+  display: inline-block;
+  margin-right: 7px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000000;
+  background-color: var(--white);
+  border-radius: 50%;
 }
 
 /* --------------------

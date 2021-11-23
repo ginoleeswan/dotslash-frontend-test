@@ -34,7 +34,13 @@ const ProductInfo = ({ product }) => {
             <h5 className="productInfoMainHeaderText">Color</h5>
           </Col>
           <Col>
-            <h5 className="productInfoMainHeaderTextInfo">{product.color}</h5>
+            <h5 className="productInfoMainHeaderTextInfo">
+              <div
+                style={{ backgroundColor: product.color }}
+                className="colorCircle"
+              ></div>
+              {product.color}
+            </h5>
           </Col>
         </Row>
         <Row className="mb-4">
