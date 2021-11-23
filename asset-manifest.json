@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dotslash-frontend-test/static/css/main.c9a0a11f.chunk.css",
-    "main.js": "/dotslash-frontend-test/static/js/main.eb98caef.chunk.js",
-    "main.js.map": "/dotslash-frontend-test/static/js/main.eb98caef.chunk.js.map",
+    "main.js": "/dotslash-frontend-test/static/js/main.40ddd1c7.chunk.js",
+    "main.js.map": "/dotslash-frontend-test/static/js/main.40ddd1c7.chunk.js.map",
     "runtime-main.js": "/dotslash-frontend-test/static/js/runtime-main.b7fd2f53.js",
     "runtime-main.js.map": "/dotslash-frontend-test/static/js/runtime-main.b7fd2f53.js.map",
     "static/css/2.ce3df9c6.chunk.css": "/dotslash-frontend-test/static/css/2.ce3df9c6.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.ce3df9c6.chunk.css",
     "static/js/2.4c5528d7.chunk.js",
     "static/css/main.c9a0a11f.chunk.css",
-    "static/js/main.eb98caef.chunk.js"
+    "static/js/main.40ddd1c7.chunk.js"
   ]
 }
