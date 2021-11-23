@@ -717,6 +717,19 @@ Purchase Form
   .topBannerButtonContainer {
     padding-left: 120px;
   }
+
+  .horizontalLine {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .productInfoContainer {
+    width: 100%;
+  }
+
+  .purchaseFormContainer {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -775,25 +788,12 @@ Purchase Form
     width: 100%;
   }
 
-  .productInfoContainer {
-    width: 100%;
-  }
-
   .productInfoDiscountContainer {
     width: 85%;
   }
 
   .productInfoFinalPriceContainer {
     width: 15%;
-  }
-
-  .horizontalLine {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .purchaseFormContainer {
-    width: 100%;
   }
 
   .footer-nav {

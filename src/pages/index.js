@@ -53,10 +53,8 @@ const Home = () => {
             <Row>
               <TopBanner />
               <Breadcrumb>
-                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                  Boots
-                </Breadcrumb.Item>
+                <Breadcrumb.Item href="/#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="/#">Boots</Breadcrumb.Item>
                 <Breadcrumb.Item active>Dylan Hiker Boots</Breadcrumb.Item>
               </Breadcrumb>
             </Row>
