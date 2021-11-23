@@ -1,4 +1,5 @@
-<h1 align="center">👞  DotSlash Frontend Test - Reway E-Commerce Storefront 👞 </h1>
+<h1 align="center">👞 Reway 👞 </h1>
+<h2 align="center"> DotSlash Frontend Test - E-Commerce Storefront</h2>
 
 <p align="center"> Made in React, constructed with create-react-app, utilizing React Bootstrap </p>
 <p align="center">
