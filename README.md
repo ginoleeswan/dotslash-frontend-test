@@ -12,7 +12,7 @@
 <h2 align="center">🥿  <a href="https://ginoleeswan.github.io/dotslash-frontend-test/">See Live</a> 🥿 </h2>
 
 <p align="center">
-  <a href="https://ginoleeswan.github.io//">
+  <a href="https://ginoleeswan.github.io/dotslash-frontend-test/">
     <img src="./src/images/reway-screenshot.png" style="background: none;"  alt="screenshot" />
   </a>
 </p>
