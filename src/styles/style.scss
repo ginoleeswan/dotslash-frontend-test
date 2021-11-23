@@ -1,4 +1,4 @@
-// change the theme
+// change the reactbootstrap theme
 $theme-colors: (
   "primary": #00a2ff,
   "danger": #ff4136,
@@ -35,8 +35,7 @@ $theme-colors: (
 body {
   padding-top: 92px;
   margin: 0;
-  font-family: "PT Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "PT Sans", "Segoe UI", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -121,11 +120,7 @@ ul {
   -------------------- */
 
 .header-nav {
-  /* width: 1299px; */
   height: 92px;
-  /* left: calc(50% - 1299px / 2 - 0.5px); */
-  /* top: 0px; */
-
   font-size: 16px;
   font-family: "Suez One", sans-serif;
   text-transform: uppercase;
@@ -166,13 +161,8 @@ ul {
   -------------------- */
 
 .sub-header {
-  /* position: absolute; */
-  /* width: 1300px; */
   margin-bottom: 30px;
   height: 77px;
-  /* left: calc(50% - 1300px / 2);
-   top: 92px; */
-
   font-size: 17px;
   font-family: "Suez One", sans-serif;
   color: #828282;
