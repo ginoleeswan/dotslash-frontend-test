@@ -15,6 +15,17 @@ const SearchBox = () => {
   const createSliderWithTooltip = Slider.createSliderWithTooltip;
   const Range = createSliderWithTooltip(Slider.Range);
 
+  var formatter = new Intl.NumberFormat("en-ZA", {
+    style: "currency",
+    currency: "ZAR",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+  function currencyFormatter(v) {
+    return formatter.format(v);
+  }
+
   return (
     <Container className="searchBoxContainer">
       <Row className="searchBoxHeader">
@@ -66,14 +77,14 @@ const SearchBox = () => {
           </Form.Label>
           <Range
             className="searchBoxPriceRange"
-            value={pricing}
+            defaultValue={pricing}
             min={0}
             max={3000}
-            onChange={(value) => setPricing(value)}
+            onAfterChange={(value) => setPricing(value)}
             allowCross={false}
             tipProps={{ visible: true, placement: "bottom" }}
             // tipFormatter={(value) => <span className="tooltip">{value}€</span>}
-            tipFormatter={(value) => `${value}`}
+            tipFormatter={currencyFormatter}
           />
         </Form.Group>
 
