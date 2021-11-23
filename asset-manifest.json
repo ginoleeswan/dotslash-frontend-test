@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dotslash-frontend-test/static/css/main.d82e32c0.chunk.css",
-    "main.js": "/dotslash-frontend-test/static/js/main.5d220ddb.chunk.js",
-    "main.js.map": "/dotslash-frontend-test/static/js/main.5d220ddb.chunk.js.map",
+    "main.css": "/dotslash-frontend-test/static/css/main.7c0e7ad9.chunk.css",
+    "main.js": "/dotslash-frontend-test/static/js/main.e6aeea10.chunk.js",
+    "main.js.map": "/dotslash-frontend-test/static/js/main.e6aeea10.chunk.js.map",
     "runtime-main.js": "/dotslash-frontend-test/static/js/runtime-main.b7fd2f53.js",
     "runtime-main.js.map": "/dotslash-frontend-test/static/js/runtime-main.b7fd2f53.js.map",
     "static/css/2.ce3df9c6.chunk.css": "/dotslash-frontend-test/static/css/2.ce3df9c6.chunk.css",
-    "static/js/2.bc7062e2.chunk.js": "/dotslash-frontend-test/static/js/2.bc7062e2.chunk.js",
-    "static/js/2.bc7062e2.chunk.js.map": "/dotslash-frontend-test/static/js/2.bc7062e2.chunk.js.map",
+    "static/js/2.4c5528d7.chunk.js": "/dotslash-frontend-test/static/js/2.4c5528d7.chunk.js",
+    "static/js/2.4c5528d7.chunk.js.map": "/dotslash-frontend-test/static/js/2.4c5528d7.chunk.js.map",
     "index.html": "/dotslash-frontend-test/index.html",
     "static/css/2.ce3df9c6.chunk.css.map": "/dotslash-frontend-test/static/css/2.ce3df9c6.chunk.css.map",
-    "static/css/main.d82e32c0.chunk.css.map": "/dotslash-frontend-test/static/css/main.d82e32c0.chunk.css.map",
-    "static/js/2.bc7062e2.chunk.js.LICENSE.txt": "/dotslash-frontend-test/static/js/2.bc7062e2.chunk.js.LICENSE.txt",
+    "static/css/main.7c0e7ad9.chunk.css.map": "/dotslash-frontend-test/static/css/main.7c0e7ad9.chunk.css.map",
+    "static/js/2.4c5528d7.chunk.js.LICENSE.txt": "/dotslash-frontend-test/static/js/2.4c5528d7.chunk.js.LICENSE.txt",
     "static/media/Logo.962054aa.svg": "/dotslash-frontend-test/static/media/Logo.962054aa.svg",
     "static/media/TopBanner.00c0a7cc.png": "/dotslash-frontend-test/static/media/TopBanner.00c0a7cc.png",
     "static/media/ad.23623333.png": "/dotslash-frontend-test/static/media/ad.23623333.png",
@@ -29,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.b7fd2f53.js",
     "static/css/2.ce3df9c6.chunk.css",
-    "static/js/2.bc7062e2.chunk.js",
-    "static/css/main.d82e32c0.chunk.css",
-    "static/js/main.5d220ddb.chunk.js"
+    "static/js/2.4c5528d7.chunk.js",
+    "static/css/main.7c0e7ad9.chunk.css",
+    "static/js/main.e6aeea10.chunk.js"
   ]
 }
