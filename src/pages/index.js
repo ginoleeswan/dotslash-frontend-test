@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../components/Header";
 import MailingList from "../components/MailingList";
 import ProductCard from "../components/ProductCard";
