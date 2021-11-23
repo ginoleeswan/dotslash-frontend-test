@@ -54,9 +54,9 @@ const Header = () => {
         </Navbar.Collapse>
 
         <Navbar.Collapse className="justify-content-end">
-          <Nav.Link href="#signup">Sign Up</Nav.Link>
+          <Nav.Link href="#">Sign Up</Nav.Link>
           <Button
-            href="#login"
+            href="#"
             className="btn-outline loginButton"
             variant="outline-primary"
           >
