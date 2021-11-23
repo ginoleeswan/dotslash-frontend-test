@@ -333,7 +333,7 @@ Low Stock Tag
 .searchBoxContainer {
   width: 366px;
   max-width: 366px;
-  height: 433px;
+  height: 100%;
   margin: 0;
   margin-bottom: 40px;
   border: 3px solid var(--blue);
@@ -363,9 +363,9 @@ Low Stock Tag
 }
 
 .searchBoxFormContainer {
-  padding: 0 30px;
-  padding-top: 20px;
-  height: 360px;
+  padding: 20px 30px;
+
+  height: 100%;
 }
 
 .searchBoxRow {
@@ -425,6 +425,13 @@ Low Stock Tag
 
 .react-tag-input__input {
   font-size: 0.8em !important;
+}
+
+.rc-slider-tooltip-inner {
+  color: var(--grey) !important;
+  background-color: var(--white) !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
 }
 
 /* --------------------

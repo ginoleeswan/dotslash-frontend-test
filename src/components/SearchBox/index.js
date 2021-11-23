@@ -9,7 +9,7 @@ import "rc-slider/assets/index.css";
 
 const SearchBox = () => {
   const [pricing, setPricing] = useState([300, 2000]);
-  const [tags, setTags] = useState(["example tag"]);
+  const [tags, setTags] = useState(["SUPERBALIST", "Mango"]);
 
   const Slider = require("rc-slider");
   const createSliderWithTooltip = Slider.createSliderWithTooltip;
@@ -73,6 +73,7 @@ const SearchBox = () => {
             allowCross={false}
             tipProps={{ visible: true, placement: "bottom" }}
             // tipFormatter={(value) => <span className="tooltip">{value}€</span>}
+            tipFormatter={(value) => `${value}`}
           />
         </Form.Group>
 

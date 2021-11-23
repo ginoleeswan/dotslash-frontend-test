@@ -56,5 +56,8 @@
     "sass": "^1.43.4",
     "sass-loader": "^10.2.0",
     "webpack": "^4.44.2"
+  },
+  "resolutions": {
+    "rc-align": "2.3.5"
   }
 }
