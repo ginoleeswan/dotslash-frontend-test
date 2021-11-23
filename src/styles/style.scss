@@ -145,6 +145,11 @@ ul {
   //   margin-right: 10px;
 }
 
+.nav-link:hover {
+  color: var(--grey);
+  text-decoration: none;
+}
+
 .navLogo {
   margin-right: 20px;
 }
